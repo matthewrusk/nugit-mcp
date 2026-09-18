@@ -1,0 +1,42 @@
+{
+  "name": "nugit",
+  "version": "0.2.0",
+  "description": "Save AI creations privately. Search and reuse your Nugs across assistants with optional, scoped read access.",
+  "author": {
+    "name": "Matthew Rusk",
+    "email": "hello@nugit.ai",
+    "url": "https://nugit.ai"
+  },
+  "homepage": "https://nugit.ai",
+  "repository": "https://github.com/matthewrusk/nugit-mcp",
+  "license": "MIT",
+  "keywords": [
+    "knowledge",
+    "memory",
+    "productivity"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "NugIt",
+    "shortDescription": "Keep good answers. Reuse them across AIs.",
+    "longDescription": "Save AI creations privately. Search and reuse your Nugs across assistants with optional, scoped read access.",
+    "developerName": "NugIt",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Optional read",
+      "OAuth"
+    ],
+    "websiteURL": "https://nugit.ai",
+    "privacyPolicyURL": "https://nugit.ai/privacy",
+    "termsOfServiceURL": "https://nugit.ai/terms",
+    "defaultPrompt": [
+      "Save that answer to NugIt.",
+      "Find my saved brand voice and cite the Nug.",
+      "Adapt my saved lesson outline for beginners."
+    ],
+    "brandColor": "#4F5CFF",
+    "composerIcon": "./assets/nugit.svg",
+    "logo": "./assets/nugit.svg"
+  }
+}

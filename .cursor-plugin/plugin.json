@@ -1,0 +1,23 @@
+{
+  "name": "nugit",
+  "version": "0.2.0",
+  "description": "Save AI creations privately. Search and reuse your Nugs across assistants with optional, scoped read access.",
+  "author": {
+    "name": "Matthew Rusk",
+    "email": "hello@nugit.ai",
+    "url": "https://nugit.ai"
+  },
+  "homepage": "https://nugit.ai",
+  "repository": "https://github.com/matthewrusk/nugit-mcp",
+  "license": "MIT",
+  "keywords": [
+    "knowledge",
+    "memory",
+    "productivity",
+    "writing",
+    "education",
+    "mcp"
+  ],
+  "logo": "assets/nugit.svg",
+  "mcpServers": "mcp.json"
+}

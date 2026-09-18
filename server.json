@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.matthewrusk/nugit",
+  "title": "NugIt",
+  "description": "Save AI creations privately. Search and reuse Nugs across assistants with optional read access.",
+  "version": "0.2.0",
+  "repository": {
+    "url": "https://github.com/matthewrusk/nugit-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://nugit.ai",
+  "icons": [
+    {
+      "src": "https://nugit.ai/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nugit.ai/mcp"
+    }
+  ]
+}

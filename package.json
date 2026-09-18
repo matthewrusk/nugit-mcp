@@ -1,0 +1,21 @@
+{
+  "name": "nugit-mcp-integrations",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Validation and documentation for NugIt hosted MCP integrations. Not an MCP server runtime.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run validate && npm test",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}

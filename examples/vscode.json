@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "nugit": {
+      "type": "http",
+      "url": "https://nugit.ai/mcp"
+    }
+  }
+}
