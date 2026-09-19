@@ -87,7 +87,7 @@ export async function validateRepository(root = ROOT) {
     requireValue(manifest.name === 'nugit' && manifest.version === pkg.version, `${path}: identity/version mismatch`);
     requireValue(manifest.repository === REPOSITORY && manifest.license === 'MIT', `${path}: repository/license mismatch`);
     requireValue(typeof manifest.description === 'string' && manifest.description.length >= 30, `${path}: missing useful description`);
-    requireValue(manifest.author?.name === 'Matthew Rusk', `${path}: publisher identity mismatch`);
+    requireValue(manifest.author?.name === (path === '.cursor-plugin/plugin.json' ? 'MGR Music Tuition Ltd' : 'Matthew Rusk'), `${path}: publisher identity mismatch`);
     requireValue(manifest.mcpServers === mcp, `${path}: unexpected MCP reference`);
     await packagePath(resolve(root, base), mcp);
     requireValue(!('hooks' in manifest) && !('commands' in manifest) && !('agents' in manifest), `${path}: unexpected executable components`);

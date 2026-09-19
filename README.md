@@ -4,16 +4,16 @@
 
 **Keep the good answer. Use it again in another AI.**
 
-NugIt saves the AI answers, ideas, plans, and instructions you choose to keep in a private library. Connect another assistant to the same NugIt account, optionally give it read access to one collection, and reuse that work with a link back to the original Nug.
+NugIt saves the AI answers, ideas, plans, and instructions you choose to keep in a private library. Connect your AI tools to the same NugIt account to find and reuse that knowledge across conversations, with a link back to the original Nug and control over what each connection can read.
 
 [Create your NugIt account](https://nugit.ai) · [Choose an assistant](docs/clients.md) · [Try a first workflow](docs/workflows.md) · [Get help](https://nugit.ai/plugin-support)
 
 ## Start here
 
 1. Follow the setup guide for your assistant below. The hosted MCP URL is **`https://nugit.ai/mcp`**.
-2. Sign in to NugIt and review the requested permissions. Saving and reading are separate permissions.
+2. Sign in to NugIt and approve the connection. New connections default to saving and reading your whole library; manage each connection in Account settings.
 3. After an answer you want to keep, say **“Save that to NugIt.”** Wait for the confirmed private Nug link.
-4. To reuse it, approve read access in the receiving assistant and add the Nug to its approved collection in NugIt. Ask **“Search NugIt for brand voice, read the matching Nug, and use it to draft this announcement. Cite the Nug.”**
+4. To reuse it, ask a connected assistant to search your library. If you limited that connection to one collection in Account settings, add the Nug to that collection first. Ask **“Search NugIt for brand voice, read the matching Nug, and use it to draft this announcement. Cite the Nug.”**
 
 Connecting alone does not save anything. Saving a Nug does not automatically add it to a collection. Each assistant has its own authorization. An existing save-only connection cannot read your library.
 
@@ -45,7 +45,7 @@ Start with the [copyable workflows](docs/workflows.md). This is deliberate reuse
 | `search_nugs` | Find saved Nugs using literal keywords | `nugs:read` plus approved collection or library |
 | `fetch_nug` | Read a selected Nug, with pagination for long content | Same read permission |
 
-Read access starts off. You can choose one manual collection or explicitly authorize your whole library. Removing a Nug from that collection stops future retrieval through that grant. Revoking a connection stops future access; it cannot erase text already returned to another AI.
+New connections default to saving and reading your whole library, including future Nugs. In Account settings → AI connections → Change access, choose Save only or Save and read, with access to one manual collection or your whole library. Save changes without reconnecting. Existing save-only connections retain their access until you change it. Removing a Nug from that collection stops future retrieval through that grant. Revoking a connection stops future access; it cannot erase text already returned to another AI.
 
 See [permissions and privacy](docs/permissions.md), [tool reference](docs/tools.md), and [troubleshooting](docs/troubleshooting.md). A NugIt account is required; current account capacity and plan limits apply. Your AI provider's access rules and data policies also apply.
 

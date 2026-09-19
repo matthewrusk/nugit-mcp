@@ -8,11 +8,13 @@ Every assistant connection is authorized independently. Use the same NugIt accou
 | `nugs:read` + collection | Search and fetch your Nugs currently in one approved manual collection |
 | `nugs:read` + library | Search and fetch your library, including future Nugs |
 
-Read access is off initially. A client must request `nugs:read` before read consent is offered. If the client omits scopes, NugIt defaults to saving only. When both scopes are requested, users can approve saving while leaving reading off. Read-only grants cannot save.
+When a new connection omits scopes, NugIt defaults to saving and reading the whole library, including future Nugs. Explicitly requested scopes still apply; existing save-only connections are not silently upgraded. The connection screen explains access and points to Account settings. Read-only grants cannot save.
+
+In [Account settings](https://nugit.ai/account) → AI connections → Change access, choose **Save only**, or **Save and read** with **Whole library, including future Nugs** or **Selected collection**, then **Save access**.
 
 A selected collection must belong to the signed-in user. Smart collections are not supported for this permission. Membership is evaluated at retrieval time: adding a Nug makes it accessible; removing it stops subsequent access through that collection grant. Deleting the collection does not expand access to the library. Saving through MCP does not automatically add a Nug to a collection.
 
-Changing the selected collection requires revoking the old connection and authorizing again. Token refresh preserves the grant's boundary. Revocation prevents future access, but cannot retract content already returned to an assistant or cancel a database query already running against an earlier snapshot.
+Changes to access apply to the existing connection without reconnecting. Token refresh preserves its current boundary. Revocation prevents future access, but cannot retract content already returned to an assistant or cancel a database query already running against an earlier snapshot.
 
 ## What moves between services
 
