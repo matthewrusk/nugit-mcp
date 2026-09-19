@@ -1,11 +1,10 @@
 {
   "name": "nugit",
   "version": "0.2.0",
-  "description": "Save AI creations privately. Search and reuse your Nugs across assistants with optional, scoped read access.",
+  "description": "Save useful answers from your AI conversations in one private library. Find and reuse knowledge across connected AI tools, including Cursor, with control over what each connection can read.",
   "author": {
-    "name": "Matthew Rusk",
-    "email": "hello@nugit.ai",
-    "url": "https://nugit.ai"
+    "name": "MGR Music Tuition Ltd",
+    "email": "hello@nugit.ai"
   },
   "homepage": "https://nugit.ai",
   "repository": "https://github.com/matthewrusk/nugit-mcp",
@@ -19,5 +18,6 @@
     "mcp"
   ],
   "logo": "assets/nugit.svg",
-  "mcpServers": "mcp.json"
+  "mcpServers": "mcp.json",
+  "displayName": "NugIt"
 }
